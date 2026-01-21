@@ -3,7 +3,7 @@ import type { StoryFn } from '@storybook/preact';
 import { Card } from './Card';
 
 export default {
-  title: 'Components/Card', // Назва в меню Storybook
+  title: 'Components/Card',
   component: Card,
 };
 
@@ -13,12 +13,12 @@ const defaultArgs = {
   image: 'https://images.unsplash.com/photo-1460317442991-0ec239f3674b?auto=format&fit=crop&w=400&q=80',
 };
 
-// Базова сторі (Brand A за замовчуванням)
+// Brand A
 export const Primary = {
   args: defaultArgs,
 };
 
-// Сторі для перевірки Brand B
+// Brand B
 export const BrandB = {
   args: defaultArgs,
   decorators: [

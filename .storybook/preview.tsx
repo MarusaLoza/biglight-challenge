@@ -23,7 +23,6 @@ const preview: Preview = {
       const theme = context.globals.theme || 'brand-a';
       const themeClass = theme === 'brand-b' ? 'theme-brand-b' : '';
       
-      // Використовуємо функцію h безпосередньо, щоб уникнути конфліктів типів JSX
       return h('div', { className: themeClass }, Story());
     },
   ],

@@ -24,7 +24,6 @@ export const Input = ({ label, type = "text", placeholder, value, onChange }: In
       value={value}
       onInput={onChange}
       placeholder={placeholder}
-      /* Використовуємо style для критичних токенів */
       style={{
         backgroundColor: 'var(--brand-surface-colour-secondary)',
         borderColor: 'var(--brand-border-colour-primary)',

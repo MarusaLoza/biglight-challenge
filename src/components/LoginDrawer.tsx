@@ -9,7 +9,6 @@ interface LoginDrawerProps {
 }
 
 export const LoginDrawer = ({ isOpen, onClose }: LoginDrawerProps) => {
-  // Опції для нашого нового Dropdown
   const languageOptions = [
     { label: 'English', value: 'en' },
     { label: 'Ukrainian', value: 'ua' },
@@ -18,7 +17,6 @@ export const LoginDrawer = ({ isOpen, onClose }: LoginDrawerProps) => {
 
   return (
     <>
-      {/* Overlay - затемнення фону */}
       <div 
         className={`fixed inset-0 bg-[var(--brand-surface-colour-overlay-background)] transition-opacity duration-300 z-[9998] 
         ${isOpen ? 'opacity-100 visible' : 'opacity-0 invisible'}`}
@@ -36,7 +34,7 @@ export const LoginDrawer = ({ isOpen, onClose }: LoginDrawerProps) => {
         ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}
       >
         
-        {/* Header - Кнопка закриття */}
+        {/* Header */}
         <div className="flex justify-end p-6">
           <button 
             onClick={onClose} 
@@ -74,7 +72,7 @@ export const LoginDrawer = ({ isOpen, onClose }: LoginDrawerProps) => {
             className="flex flex-col gap-6" 
             onSubmit={(e) => e.preventDefault()}
           >
-            {/* Наш новий Dropdown */}
+            {/* Dropdown */}
             <Dropdown 
               label="Preferred Language" 
               options={languageOptions} 

@@ -7,13 +7,12 @@ export default {
   title: 'Components/LoginDrawer',
   component: LoginDrawer,
   parameters: {
-    layout: 'fullscreen', // Прибирає стандартні паддінги Storybook, які створюють скрол
+    layout: 'fullscreen',
   },
 };
 
-// Декоратор для керування станом "відкрито/закрито" в Storybook
 const Template: StoryFn = (args) => {
-  const [isOpen, setIsOpen] = useState(false); // За замовчуванням відкритий для зручності тестування
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <div>
       <button 

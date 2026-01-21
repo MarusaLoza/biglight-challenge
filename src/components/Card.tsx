@@ -10,7 +10,6 @@ interface CardProps {
 export const Card = ({ title, description, image }: CardProps) => {
   return (
     <div 
-      /* Пряме керування фоном, бордером та радіусом */
       style={{
         backgroundColor: 'var(--brand-surface-colour-page)', // Або var(--brand-surface-colour-secondary)
         borderColor: 'var(--brand-border-colour-primary)',
@@ -20,7 +19,6 @@ export const Card = ({ title, description, image }: CardProps) => {
       }}
       className="overflow-hidden shadow-sm flex flex-col transition-all duration-300"
     >
-      {/* 1. ФІКС КАРТИНКИ: якщо її немає, показуємо кольоровий блок з іконкою */}
       <div 
         style={{ backgroundColor: 'var(--brand-surface-colour-passive)' }}
         className="w-full h-48 overflow-hidden flex items-center justify-center"
@@ -35,7 +33,6 @@ export const Card = ({ title, description, image }: CardProps) => {
         )}
       </div>
 
-      {/* 2. КОНТЕНТ ТА ШРИФТИ */}
       <div className="p-[var(--brand-scale-600)] flex flex-col gap-[var(--brand-scale-300)]">
         <h3 
           style={{ 

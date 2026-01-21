@@ -8,7 +8,7 @@ export function App() {
   return (
    <div className="flex gap-10 p-10 bg-gray-100 min-h-screen">
       
-      {/* Стовпчик Бренду А (стандартний) */}
+      {/* Brand A */}
       <div className="flex flex-col gap-6">
         <h2 className="font-bold text-center">Brand A (Default)</h2>
         <div className="p-6 bg-white border rounded-lg">
@@ -25,7 +25,7 @@ export function App() {
         </div>
       </div>
 
-      {/* Стовпчик Бренду Б (з твоїм класом) */}
+      {/* Brand B */}
       <div className="theme-brand-b flex flex-col gap-6">
         <h2 className="font-bold text-center">Brand B (Themed)</h2>
         <div className="p-6 bg-white border rounded-lg">
