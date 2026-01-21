@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@theme {
+  --font-headings: var(--brand-font-font-family-headings);
+  --font-body: var(--brand-font-font-family-paragraph);
+}
+
+:root {
+  /* BRAND A VALUES */
+  --brand-surface-colour-action-primary: #fc4c02;
+  --brand-text-colour-action-onprimary: #000000;
+  --brand-border-radius-md: 8px;
+  --brand-border-radius-lg: 12px;
+  --brand-font-font-family-headings: Inter;
+  --brand-font-font-family-paragraph: Inter;
+  --brand-surface-colour-hover: #ffffff;
+  --brand-surface-colour-page: #ffffff;
+}
+
+.theme-brand-b {
+  --brand-surface-colour-action-primary: #901438 !important;
+  --brand-text-colour-action-onprimary: #ffffff !important;
+  --brand-border-radius-md: 0px !important;
+  --brand-border-radius-lg: 0px !important;
+  --brand-font-font-family-headings: mencken-std-head-narrow !important;
+  --brand-surface-colour-hover: #f5f5f5 !important;
+  --brand-font-font-family-paragraph: 'Open Sans', sans-serif !important;
+  --brand-font-font-family-headings: 'Open Sans', sans-serif !important;
+  --brand-surface-colour-page: #f0f0f0 !important; 
+  --brand-text-colour-headings: #1a1a1a !important;
+  --brand-text-colour-body: #444444 !important;
+}
+
+@layer base {
+  *, ::after, ::before {
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+}
