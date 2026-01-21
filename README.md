@@ -1,9 +1,9 @@
-**Multi-Brand Design System**
+# **Multi-Brand Design System**
 
 A scalable, token-driven design system built with Preact, Tailwind CSS v4, and Storybook.
 This project demonstrates a robust approach to multi-brand theming by synchronizing UI components with a centralized design token architecture.
 
-🌟 Key Features
+ ## 🌟 Key Features
 
 Token-Based Architecture
 All visual properties are derived from a structured figma-tokens.json, ensuring a single source of truth for design decisions.
@@ -17,7 +17,7 @@ Uses the latest CSS-native configuration and theme variables for better performa
 Responsive & Accessible
 Components are optimized for all screen sizes, from small mobile devices to large desktops, with accessibility in mind.
 
-🎨 Theming Logic
+## 🎨 Theming Logic
 
 The system follows a “Double Variable” strategy to enable predictable and scalable theme switching.
 
@@ -33,12 +33,12 @@ Components consume semantic variables (e.g. --color-btn-bg) instead of raw value
 
 Applying the .theme-brand-b class overrides primitive values, instantly updating the entire UI without modifying component code.
 
-🏷 Brand Comparison
+## 🏷 Brand Comparison
 Feature	Brand A (Default)	Brand B (Modern)
 Primary Color	Vibrant Orange #FC4C02	Deep Maroon #901438
 Typography	Inter	Open Sans / Mencken
 Border Radius	Rounded (8px)	Sharp (0px)
-🧩 Components
+## 🧩 Components
 
 Button
 Versatile action component with dynamic hover states and brand-based border-radius mapping.
@@ -55,7 +55,7 @@ Content container with brand-specific surface backgrounds and image fallback han
 LoginDrawer
 A complex molecule component demonstrating how multiple atoms work together within a themed slide-out panel.
 
-🛠 Tech Stack
+## 🛠 Tech Stack
 
 Framework: Preact (lightweight React alternative)
 
@@ -65,12 +65,12 @@ Environment: Storybook 8
 
 Language: TypeScript
 
-🚀 Getting Started
+## 🚀Getting Started
 Install dependencies
-npm install
+### npm install
 
 Run Storybook
-npm run storybook
+### npm run storybook
 
 Build for production
-npm run build
+### npm run build
