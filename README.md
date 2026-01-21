@@ -1,4 +1,4 @@
-Multi-Brand Design System
+**Multi-Brand Design System**
 
 A scalable, token-driven design system built with Preact, Tailwind CSS v4, and Storybook.
 This project demonstrates a robust approach to multi-brand theming by synchronizing UI components with a centralized design token architecture.
